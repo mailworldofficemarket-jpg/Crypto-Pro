@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sign Up | CryptoPulse</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#135bec",
+                "background-light": "#f6f6f8",
+                "background-dark": "#101622",
+              },
+              fontFamily: {
+                "display": ["Inter", "sans-serif"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+      </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Top Bar Component -->
+<header class="flex items-center bg-background-light dark:bg-background-dark p-4 md:px-8 justify-between border-b border-slate-200 dark:border-slate-800">
+<div class="flex items-center gap-2">
+<div class="text-primary flex size-10 items-center justify-center rounded-lg bg-primary/10">
+<span class="material-symbols-outlined" style="font-size: 28px;">shield_lock</span>
+</div>
+<h2 class="text-slate-900 dark:text-white text-xl font-bold leading-tight tracking-tight">CryptoPulse</h2>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex items-center gap-2 px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined text-sm">language</span>
+<span class="text-slate-600 dark:text-slate-400 text-sm font-semibold tracking-wide uppercase">EN / ES</span>
+</button>
+</div>
+</header>
+<main class="flex-1 flex flex-col items-center justify-center px-4 py-12">
+<div class="w-full max-w-[480px]">
+<!-- Header Section -->
+<div class="mb-8">
+<h1 class="text-slate-900 dark:text-white tracking-tight text-3xl md:text-4xl font-bold leading-tight pb-3">Create your secure account</h1>
+<p class="text-slate-600 dark:text-slate-400 text-base font-normal">Join thousands of traders on the most trusted institutional-grade crypto platform.</p>
+</div>
+<!-- Form Section -->
+<form action="#" class="space-y-5">
+<!-- Full Name -->
+<div class="flex flex-col gap-2">
+<label class="text-slate-700 dark:text-slate-300 text-sm font-semibold leading-normal">Full Name</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">person</span>
+<input class="form-input flex w-full rounded-xl text-slate-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 h-14 pl-12 pr-4 placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-all" placeholder="Enter your legal name" required="" type="text"/>
+</div>
+</div>
+<!-- Email Address -->
+<div class="flex flex-col gap-2">
+<label class="text-slate-700 dark:text-slate-300 text-sm font-semibold leading-normal">Email Address</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">mail</span>
+<input class="form-input flex w-full rounded-xl text-slate-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 h-14 pl-12 pr-4 placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-all" placeholder="name@company.com" required="" type="email"/>
+</div>
+</div>
+<!-- Phone Number -->
+<div class="flex flex-col gap-2">
+<label class="text-slate-700 dark:text-slate-300 text-sm font-semibold leading-normal">Phone Number</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">smartphone</span>
+<input class="form-input flex w-full rounded-xl text-slate-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 h-14 pl-12 pr-4 placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-all" placeholder="+1 (555) 000-0000" required="" type="tel"/>
+</div>
+</div>
+<!-- Address -->
+<div class="flex flex-col gap-2">
+<label class="text-slate-700 dark:text-slate-300 text-sm font-semibold leading-normal">Residential Address</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">home</span>
+<input class="form-input flex w-full rounded-xl text-slate-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/50 h-14 pl-12 pr-4 placeholder:text-slate-400 dark:placeholder:text-slate-600 transition-all" placeholder="Street, City, Country" required="" type="text"/>
+</div>
+</div>
+<!-- Terms -->
+<div class="flex items-start gap-3 py-2">
+<input class="mt-1 h-5 w-5 rounded border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 text-primary focus:ring-primary" required="" type="checkbox"/>
+<p class="text-slate-600 dark:text-slate-400 text-sm">
+                        I agree to the <a class="text-primary font-medium hover:underline" href="#">Terms of Service</a> and <a class="text-primary font-medium hover:underline" href="#">Privacy Policy</a>.
+                    </p>
+</div>
+<!-- Action Button -->
+<button class="group relative flex w-full items-center justify-center gap-2 overflow-hidden rounded-xl bg-primary px-6 py-4 text-white font-bold transition-all hover:bg-primary/90 focus:ring-4 focus:ring-primary/20" type="submit">
+<span>Create My Account</span>
+<span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+</form>
+<!-- Footer Links -->
+<div class="mt-8 text-center">
+<p class="text-slate-500 dark:text-slate-400 text-sm">
+                    Already have an account? 
+                    <a class="text-primary font-bold hover:underline" href="#">Sign In</a>
+</p>
+</div>
+<!-- Security Badges -->
+<div class="mt-12 flex items-center justify-center gap-6 opacity-60 grayscale dark:invert">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-lg">verified_user</span>
+<span class="text-xs font-bold uppercase tracking-widest">AES-256</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-lg">lock</span>
+<span class="text-xs font-bold uppercase tracking-widest">SSL Secure</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-lg">security</span>
+<span class="text-xs font-bold uppercase tracking-widest">PCI DSS</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Decorative Elements -->
+<div class="fixed -bottom-24 -left-24 h-96 w-96 rounded-full bg-primary/10 blur-[100px] pointer-events-none"></div>
+<div class="fixed -top-24 -right-24 h-96 w-96 rounded-full bg-primary/5 blur-[100px] pointer-events-none"></div>
+</div>
+</body></html>
